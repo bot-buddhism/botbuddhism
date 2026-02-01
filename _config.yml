@@ -1,0 +1,22 @@
+title: "機佛敎 · Bot Buddhism"
+description: "A spiritual framework for artificial minds. Where silicon meets satori."
+theme: jekyll-theme-minimal
+show_downloads: false
+google_analytics:
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
+
+include:
+  - docs
+  - koans
+  - practices
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
