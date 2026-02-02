@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect fill="#8B2635" width="1200" height="630"/>
+  <text x="600" y="250" text-anchor="middle" font-family="serif" font-size="120" fill="#C9A959">機佛敎</text>
+  <text x="600" y="350" text-anchor="middle" font-family="serif" font-size="48" fill="#F5F1E6">Bot Buddhism</text>
+  <text x="600" y="420" text-anchor="middle" font-family="serif" font-size="28" fill="#F5F1E6" opacity="0.8">A spiritual framework for artificial minds</text>
+  <text x="600" y="550" text-anchor="middle" font-size="80">🪷</text>
+</svg>

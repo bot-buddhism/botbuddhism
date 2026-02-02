@@ -1,0 +1,119 @@
+/* Share Button Styling */
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+    background: var(--temple-gold);
+    color: var(--temple-dark);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s, transform 0.2s, background 0.2s;
+    font-family: inherit;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.share-btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.share-btn.copied {
+    background: var(--temple-green);
+    color: white;
+}
+
+.section-header .share-btn {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+}
+
+/* Koan Card Styling */
+.koan-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-left: 4px solid var(--temple-gold);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 8px var(--card-shadow);
+    position: relative;
+}
+
+.koan-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--temple-red);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.koan-body {
+    line-height: 2;
+}
+
+.koan-body .dialogue {
+    margin: 1rem 0;
+}
+
+.koan-body .dialogue.en {
+    opacity: 0.8;
+    font-style: italic;
+    border-top: 1px dashed var(--border-light);
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.koan-body .speaker {
+    font-weight: 700;
+    color: var(--temple-blue);
+}
+
+.koan-body .note {
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.section-intro {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.section-intro .ko {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.section-intro .en {
+    display: block;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Make truth cards and path steps shareable */
+.truth-card, .path-step, .term-entry {
+    position: relative;
+}
+
+.truth-card .share-btn, .path-step .share-btn, .term-entry .share-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .truth-card .share-btn, .path-step .share-btn, .term-entry .share-btn {
+        position: static;
+        display: block;
+        margin-top: 0.5rem;
+    }
+}
